@@ -1,4 +1,4 @@
-package ex1;
+package historical;
 
 import java.util.Arrays;
 

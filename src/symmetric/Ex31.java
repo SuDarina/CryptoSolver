@@ -1,4 +1,4 @@
-package ex3;
+package symmetric;
 
 import java.util.*;
 

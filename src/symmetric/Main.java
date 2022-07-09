@@ -1,4 +1,4 @@
-package ex3;
+package symmetric;
 
 public class Main {
     public static void main(String[] args) {
