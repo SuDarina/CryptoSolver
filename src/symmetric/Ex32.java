@@ -3,7 +3,7 @@ package symmetric;
 import java.util.Arrays;
 
 public class Ex32 {
-    private final int[] Key = {2,3,0,4,8,7,6,5,1,9};
+    private final int[] Key = {5, 6, 3, 7, 2, 0, 4, 1};
     private final int length = Key.length;
     private final int[] S = new int[length];
 
