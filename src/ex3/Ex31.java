@@ -1,16 +1,16 @@
+package ex3;
+
 import java.util.*;
 
 public class Ex31 {
 
-    private int[] s = {1, 3, 4};
-    private List<Integer> result = new ArrayList<>();
+    private final int[] s = {1, 3, 4};
+    private final List<Integer> result = new ArrayList<>();
 
 
     private int moveRight(int[] arr, int leftBit) {
         int resBit = arr[arr.length - 1];
-        for (int i = arr.length - 1; i > 0; i--) {
-            arr[i] = arr[i - 1];
-        }
+        System.arraycopy(arr, 0, arr, 1, arr.length - 1);
         arr[0] = leftBit;
         return resBit;
     }

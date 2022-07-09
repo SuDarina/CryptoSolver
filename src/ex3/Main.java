@@ -1,3 +1,5 @@
+package ex3;
+
 public class Main {
     public static void main(String[] args) {
         Ex32 ex32 = new Ex32();

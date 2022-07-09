@@ -1,13 +1,14 @@
+package ex3;
+
 import java.util.Arrays;
 
 public class Ex32 {
     private final int[] Key = {2,3,0,4,8,7,6,5,1,9};
-    int length = Key.length;
-    int[] S = new int[length];
+    private final int length = Key.length;
+    private final int[] S = new int[length];
 
     public void refactorS() {
         int i = 0, j = 0;
-        int t;
         for (int k = 0; k < length; k++) {
             S[k] = k;
         }
