@@ -4,9 +4,14 @@ import java.util.*;
 
 public class Ex31 {
 
-    private final int[] s = {1, 3, 4};
+    private final int[] xRates;
+    private final int[] shiftReg;
     private final List<Integer> result = new ArrayList<>();
 
+    public Ex31(int[] xRates, int[] shiftReg) {
+        this.xRates = xRates;
+        this.shiftReg = shiftReg;
+    }
 
     private int moveRight(int[] arr, int leftBit) {
         int resBit = arr[arr.length - 1];
@@ -17,7 +22,7 @@ public class Ex31 {
 
     public void getResult() {
         int leftBit = 0;
-        int[] resA = {1, 1, 0, 0, 0, 1};
+        int[] resA = Arrays.copyOf(shiftReg, shiftReg.length);
         int[] startA = new int[resA.length];
         int rang = 0;
 
@@ -26,11 +31,11 @@ public class Ex31 {
         while (!Arrays.equals(startA, resA)) {
             rang++;
             if(!c){
-                startA = new int[]{1, 1, 0, 0, 0, 1};
+                startA = Arrays.copyOf(shiftReg, shiftReg.length);
                 c = true;
             }
-            for (int i = 0; i < s.length; i++) {
-                leftBit += startA[s[i] - 1];
+            for (int j : xRates) {
+                leftBit += startA[shiftReg.length - j];
             }
             leftBit %= 2;
             System.out.println("left bit: " + leftBit);
@@ -40,7 +45,7 @@ public class Ex31 {
             System.out.println(Arrays.toString(startA));
         }
         Collections.reverse(result);
-        System.out.println("result: " + result.toString());
+        System.out.println("result: " + result);
         System.out.println("rang: " + rang);
     }
 }

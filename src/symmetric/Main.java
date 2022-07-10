@@ -8,7 +8,7 @@ public class Main {
 
         System.out.println();
 
-        Ex31 ex31 = new Ex31();
+        Ex31 ex31 = new Ex31(new int[]{6, 4, 3}, new int[]{1, 1, 0, 0, 0, 1});
         ex31.getResult();
     }
 }
