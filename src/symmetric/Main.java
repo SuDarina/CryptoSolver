@@ -2,9 +2,8 @@ package symmetric;
 
 public class Main {
     public static void main(String[] args) {
-        Ex32 ex32 = new Ex32();
-        ex32.refactorS();
-        ex32.getK(5);
+        Ex32 ex32 = new Ex32(new int[]{5, 6, 3, 7, 2, 0, 4, 1}, 5);
+        ex32.getResult();
 
         System.out.println();
 
