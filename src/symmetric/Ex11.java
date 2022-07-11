@@ -55,10 +55,4 @@ public class Ex11 implements Result{
     public void getResult() {
         System.out.println("Bits of cipher after " + rounds + " rounds of Feistel: " + compute());
     }
-
-    public static void main(String[] args) {
-        Ex11 ex11 = new Ex11("00001100101111000101", List.of("0110011011", "0111011001"), 2);
-        ex11.getResult();
-    }
 }
-
