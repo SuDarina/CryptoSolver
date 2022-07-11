@@ -1,5 +1,7 @@
 package historical;
 
+import historical.utils.AlphabetWork;
+
 import java.util.List;
 
 public class Vigener {

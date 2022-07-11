@@ -2,7 +2,7 @@ package symmetric;
 
 import java.util.Arrays;
 
-public class Ex32 {
+public class Ex32 implements Result{
     private final int[] key;
     private final int numberOfElements;
 
@@ -49,6 +49,7 @@ public class Ex32 {
         return K;
     }
 
+    @Override
     public void getResult(){
         refactorS();
         System.out.println("S after all permutations of the 1st stage: " + Arrays.toString(S));

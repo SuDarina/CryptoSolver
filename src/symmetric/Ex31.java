@@ -2,7 +2,7 @@ package symmetric;
 
 import java.util.*;
 
-public class Ex31 {
+public class Ex31 implements Result{
 
     private final int[] xRates;
     private final int[] shiftReg;
@@ -20,6 +20,7 @@ public class Ex31 {
         return resBit;
     }
 
+    @Override
     public void getResult() {
         int leftBit = 0;
         int[] resA = Arrays.copyOf(shiftReg, shiftReg.length);
