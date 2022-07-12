@@ -5,8 +5,6 @@ import java.util.Arrays;
 public class Ex32 implements Result{
     private final int[] key;
     private final int numberOfElements;
-
-
     private final int length;
     private final int[] S;
 

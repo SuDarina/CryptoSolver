@@ -29,10 +29,9 @@ public class Ex11 implements Result{
 
     private void formatNumber(List<String> l) {
         if (l.get(l.size() - 1).length() < m.length() / 2) {
-            StringBuilder sb = new StringBuilder();
-            sb.append("0".repeat(Math.max(0, m.length() / 2 - l.get(l.size() - 1).length())));
-            sb.append(l.get(l.size() - 1));
-            l.set(l.size() - 1, sb.toString());
+            String sb = "0".repeat(Math.max(0, m.length() / 2 - l.get(l.size() - 1).length())) +
+                    l.get(l.size() - 1);
+            l.set(l.size() - 1, sb);
         }
     }
     public String compute(){
